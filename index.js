@@ -10,7 +10,7 @@ if (!databaseUri) {
 }
 
 const mountPath = process.env.PARSE_MOUNT || '/1';
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 3000;
 const api = new ParseServer({
     databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
     appId: process.env.APP_ID || 'myAppId',
